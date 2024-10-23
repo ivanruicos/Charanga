@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charanga La Segoviana</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/LogoCharanga.jpg" type="image/png">
+    <script src="js/charanga.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-card">
+                <h1 class="logo">Charanga</h1>
+                <img src="img/header.png" alt="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">Presentación</a></li>
+                <li><a href="#merchandising">Productos</a></li>
+                <li><a href="#contrataciones">Contrataciones</a></li>
+                <li><a href="#events">Eventos realizados</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about" id="about">
+        <h2>Presentación</h2>
+        <p>
+            Símbolo del logo y explicación de ello
+        </p>
+    </section>
+
+    <section class="merchandising" id="merchandising">
+        <h2>Merchandising</h2>
+        <div class="merchandising-grid">
+            <div class="merchandising-card" data-modal="modal-camiseta">
+                <img src="" alt="camiseta">
+                <h3>Camiseta</h3>
+                <p>15€</p>
+            </div>
+            <div class="merchandising-card" data-modal="modal-sudadera">
+                <img src="" alt="sudadera">
+                <h3>Sudadera</h3>
+                <p>15€</p>
+            </div>
+            <div class="merchandising-card" data-modal="modal-pañuelo">
+                <img src="" alt="pañuelo">
+                <h3>Pañuelo</h3>
+                <p>15€</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup" id="modal-camiseta">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Detalles de la camiseta</h2>
+            <p>Información extra</p>
+        </div>
+    </div>
+
+    <div class="popup" id="modal-sudadera">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Detalles de la sudadera</h2>
+            <p>Información extra</p>
+        </div>
+    </div>
+
+    <div class="popup" id="modal-pañuelo">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Detalles del pañuelo</h2>
+            <p>Información extra</p>
+        </div>
+    </div>
+
+    <section class="contrataciones" id="contrataciones">
+        <h2>Contrataciones</h2>
+        <p>
+            Calendario
+        </p>
+    </section>
+
+    <section class="events" id="events">
+        <h2>Eventos</h2>
+        <p>
+            Eventos realizados con anterioridad
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contacto</h2>
+        <form action="https://formsubmit.co/ruizcostaivan9@gmail.com" method="post">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+
+            <input type="hidden" name="_next" value="http://localhost/Portfolio/">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+        <br><br>
+        <a href="https://www.instagram.com/charangalasegoviana/" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Iván Ruiz Costa</p>
+    </footer>
+</body>
+</html>
